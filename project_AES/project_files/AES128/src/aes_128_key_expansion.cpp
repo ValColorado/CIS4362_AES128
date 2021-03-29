@@ -23,6 +23,7 @@ byte *g_function(byte *byte_word)
 // Get round key
 byte *get_round_key(byte *key_bytes, unsigned char round_number) {
     byte *round_key = new byte[16];
+
     // Fill this function
     // Note: Don't forget to delete the return og the g_function once you are done using it
     return round_key;

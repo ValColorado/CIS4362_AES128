@@ -1,4 +1,5 @@
 #include "../include/aes_128_common.h"
+#include "../include/aes_128_encrypt.h"
 
 using namespace std;
 
@@ -25,7 +26,9 @@ void print_state(byte *byte_array) {
     for (size_t i = 0; i < 4; i++) {
         cout << "0x" << hex << byte_array[i] << " " << "0x" << hex << byte_array[i + 4] << " " << "0x" << hex
              << byte_array[i + 8] << " " << "0x" << hex << byte_array[i + 12] << endl;
+
     }
+    shift_rows(byte_array);
 }
 
 

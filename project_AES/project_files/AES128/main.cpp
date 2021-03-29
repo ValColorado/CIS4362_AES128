@@ -18,8 +18,6 @@ int main() {
     newline();
     cout << "Plaintext block:" << endl;
     print_state(plaintext_block);
-    shift_rows();
-
 
 
     delete key;
